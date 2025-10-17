@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<title>Onlysystems S.A.S</title>
+<title>Only Systems S.A.S - Consultoría y Construcción de Software</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Your description">
-<meta name="keywords" content="Your keywords">
-<meta name="author" content="Your name">
+<meta name="description" content="Only Systems S.A.S: Expertos en consultoría y construcción de software personalizado. Desarrollo de aplicaciones web, móviles y arquitectura de software.">
+<meta name="keywords" content="consultoría software, desarrollo aplicaciones, arquitectura software, Only Systems, Colombia">
+<meta name="author" content="Only Systems S.A.S">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">    
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/camera.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<script type="text/javascript" src="js/jquery.js"></script>  
+<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/superfish.js"></script>
 
@@ -113,6 +114,16 @@ $(document).ready(function() {
 		
 
 
+	// Smooth scrolling for anchor links
+	$('a[href^="#"]').on('click', function(event) {
+		var target = $(this.getAttribute('href'));
+		if( target.length ) {
+			event.preventDefault();
+			$('html, body').stop().animate({
+				scrollTop: target.offset().top - 100
+			}, 1000);
+		}
+	});
 	}); 
 
 
@@ -144,7 +155,7 @@ $(window).load(function() {
 <div class="span12">
 <div class="top1_inner clearfix">
 <div class="top1_inner_bg"></div>
-<header><div class="logo_wrapper"><a href="index.html" class="logo"><img class="llogo" src="" alt=""></a></div></header>
+<header><div class="logo_wrapper"><a href="index.html" class="logo"><img class="llogo" src="images/only.png" alt="Only Systems S.A.S Logo"></a></div></header>
 <div class="navbar navbar_">
 	<div class="navbar-inner navbar-inner_">
 		<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
@@ -156,31 +167,31 @@ $(window).load(function() {
 			<ul class="nav sf-menu clearfix">
       <li class="active"><a href="index.html">Inicio</a></li>
       <li><a href="index-1.html">Sobre nosotros</a></li>
-				<li class="sub-menu sub-menu-1"><a href="index-2.html">Productos</a>
-					<ul>
-						<li><a href="404.html">404 Pagina no encontrada</a></li>
-						<li class="sub-menu sub-menu-2"><a href="index-2.html">Especiales</a>
-							<ul>
-								<li><a href="404.html">404 Pagina no encontrada</a></li>
-								<li><a href="index-2.html">sit amet</a></li>
-								<li><a href="index-2.html">adipiscing elit</a></li>
-								<li><a href="index-2.html">nunc suscipit</a></li>
-								<li><a href="404.html">404 Pagina no encontrada</a></li>
-							</ul>
-						</li>
-						<li class="sub-menu sub-menu-2"><a href="index-2.html">Listado de precio</a>
-							<ul>
-								<li><a href="index-2.html">lorem ipsum dolor</a></li>
-								<li><a href="index-2.html">sit amet</a></li>
-								<li><a href="index-2.html">adipiscing elit</a></li>
-								<li><a href="index-2.html">nunc suscipit</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li><a href="index-3.html">Servicios</a></li>
-				<li><a href="index-4.html">Proyectos</a></li>
-				<li><a href="index-5.html">Contactos</a></li>
+    <li class="sub-menu sub-menu-1"><a href="index-2.html">Productos</a>
+     <ul>
+      <li><a href="404.html">404 Pagina no encontrada</a></li>
+      <li class="sub-menu sub-menu-2"><a href="index-2.html">Especiales</a>
+      	<ul>
+      		<li><a href="404.html">404 Pagina no encontrada</a></li>
+      		<li><a href="index-2.html">sit amet</a></li>
+      		<li><a href="index-2.html">adipiscing elit</a></li>
+      		<li><a href="index-2.html">nunc suscipit</a></li>
+      		<li><a href="404.html">404 Pagina no encontrada</a></li>
+      	</ul>
+      </li>
+      <li class="sub-menu sub-menu-2"><a href="index-2.html">Listado de precio</a>
+      	<ul>
+      		<li><a href="index-2.html">lorem ipsum dolor</a></li>
+      		<li><a href="index-2.html">sit amet</a></li>
+      		<li><a href="index-2.html">adipiscing elit</a></li>
+      		<li><a href="index-2.html">nunc suscipit</a></li>
+      	</ul>
+      </li>
+     </ul>
+    </li>
+    <li><a href="index-3.html">Servicios</a></li>
+    <li><a href="index-4.html">Portafolio</a></li>
+    <li><a href="index-5.html">Contactos</a></li>
     </ul>
 		</div>
 	</div>
@@ -195,44 +206,44 @@ $(window).load(function() {
 <div class="slider_wrapper">
 <div id="slider">
 <div id="camera_wrap">
-	<div data-src="http://via.placeholder.com/1600x747">
+	<div data-src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&h=747&q=80">
 		<div class="camera_caption fadeIn">
 			<div class="txt1">
-				Servicio financiero avanzado
+				Consultoría y Construcción de Software
 			</div>
-			<div class="clearfix"></div>	
+			<div class="clearfix"></div>
 			<div class="txt2">
-				Para empresas y particulares
-			</div>	
-			<div class="clearfix"></div>					
-			<a href="#" class="button0">leer más</a>			
-		</div>     
+				Soluciones tecnológicas personalizadas para tu negocio
+			</div>
+			<div class="clearfix"></div>
+			<a href="#services" class="button0">Conoce nuestros servicios</a>
+		</div>
 	</div>
-	<div data-src="http://via.placeholder.com/1600x747">
+	<div data-src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&h=747&q=80">
 		<div class="camera_caption fadeIn">
 			<div class="txt1">
-				Soporte de alta calidad
-			</div>	
-			<div class="clearfix"></div>	
+				Arquitectura de Software Experta
+			</div>
+			<div class="clearfix"></div>
 			<div class="txt2">
-				y servicios premium
-			</div>		
-			<div class="clearfix"></div>				
-			<a href="#" class="button0">leer más</a>			
-		</div>     
+				Diseñamos sistemas escalables y seguros
+			</div>
+			<div class="clearfix"></div>
+			<a href="#about" class="button0">Sobre nosotros</a>
+		</div>
 	</div>
-	<div data-src="http://via.placeholder.com/1600x747">
+	<div data-src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&h=747&q=80">
 		<div class="camera_caption fadeIn">
 			<div class="txt1">
-				Soluciones de negocios
-			</div>	
-			<div class="clearfix"></div>	
+				Desarrollo de Aplicaciones Web y Móviles
+			</div>
+			<div class="clearfix"></div>
 			<div class="txt2">
-				Ideas creativas
-			</div>		
-			<div class="clearfix"></div>				
-			<a href="#" class="button0">leer más</a>			
-		</div>     
+				Desde la idea hasta el lanzamiento
+			</div>
+			<div class="clearfix"></div>
+			<a href="#contact" class="button0">Contáctanos</a>
+		</div>
 	</div>
 				
 </div>	
@@ -300,10 +311,10 @@ $(window).load(function() {
 								</figure>
 								<div class="caption">
 									<div class="txt1">
-										Almacenamiento
+										Aplicaciones Móviles
 									</div>
 									<div class="txt2">
-										Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. Nulla tempor fermentum orci.
+										Apps nativas para iOS y Android, con diseño intuitivo y alto rendimiento.
 									</div>
 									<div class="txt3">leer más</div>
 								</div>								
@@ -320,12 +331,12 @@ $(window).load(function() {
 								</figure>
 								<div class="caption">
 									<div class="txt1">
-										Comunicación
-									</div>
-									<div class="txt2">
-										Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. Nulla tempor fermentum orci.
-									</div>
-									<div class="txt3">leer más</div>
+											Consultoría en Arquitectura
+										</div>
+										<div class="txt2">
+											Diseñamos arquitecturas escalables y seguras para sistemas empresariales complejos.
+										</div>
+										<div class="txt3">leer más</div>
 								</div>								
 							</a>								
 						</div>
@@ -340,10 +351,10 @@ $(window).load(function() {
 								</figure>
 								<div class="caption">
 									<div class="txt1">
-										Red
+										Desarrollo Web
 									</div>
 									<div class="txt2">
-										Proin pede eros, pharetra ut, viverra sed, egestas nec, mauris. Nulla tempor fermentum orci.
+										Aplicaciones web modernas con las últimas tecnologías: React, Node.js, Python.
 									</div>
 									<div class="txt3">leer más</div>
 								</div>								
@@ -379,8 +390,8 @@ $(window).load(function() {
 </div>
 <div class="slider2_block2">
 <div class="slider2_block2_description">
-	<div class="txt1">Brindamos el mejor servicio</div>
-	<div class="txt2">Lorem ipsum dolor sit amet conse ctetur adipisicing elit.</div>
+	<div class="txt1">Expertos en Tecnología</div>
+	<div class="txt2">Más de 10 años de experiencia en el desarrollo de soluciones informáticas.</div>
 </div>
 <div class="slider2_block2_pag clearfix">
 	<a class="prev3" href="#"></a>
@@ -398,31 +409,31 @@ $(window).load(function() {
 <div class="row">
 <div class="span4 banner banner1">
 <div class="banner_inner">
-	<a href="#">
-		<div class="txt1">Potentes soluciones móviles</div>
-		<img src="http://via.placeholder.com/370x181" alt="" class="img">
-		<div class="txt2">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. </div>
+	<a href="index-3.html">
+		<div class="txt1">Consultoría en Arquitectura</div>
+		<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=370&h=181&q=80" alt="" class="img">
+		<div class="txt2">Diseñamos arquitecturas robustas y escalables para sistemas empresariales complejos. </div>
 	</a>
-</div>	
+</div>
 </div>
 <div class="span4 banner banner2">
 <div class="banner_inner">
-	<a href="#">
-		<div class="txt1">Equipo de oficina de primera</div>
-		<img src="http://via.placeholder.com/370x181" alt="" class="img">
-		<div class="txt2">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. </div>
+	<a href="index-3.html">
+		<div class="txt1">Desarrollo Personalizado</div>
+		<img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=370&h=181&q=80" alt="" class="img">
+		<div class="txt2">Soluciones de software a medida con tecnologías modernas y mejores prácticas. </div>
 	</a>
-</div>	
+</div>
 </div>
 <div class="span4 banner banner3">
 <div class="banner_inner">
-	<a href="#">
-		<div class="txt1">Servicios móviles</div>
-		<img src="http://via.placeholder.com/370x181" alt="" class="img">
-		<div class="txt2">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. </div>
+	<a href="index-3.html">
+		<div class="txt1">Seguridad Informática</div>
+		<img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=370&h=181&q=80" alt="" class="img">
+		<div class="txt2">Protege tus activos digitales con nuestras consultorías especializadas en ciberseguridad. </div>
 	</a>
-</div>	
-</div>	
+</div>
+</div>
 </div>	
 </div>	
 </div>
@@ -435,9 +446,9 @@ $(window).load(function() {
 <div class="row">
 <div class="span8">
 <div class="block1">
-	<div class="txt1">¿Tiene preguntas? <span>Llámanos: 1 800 123 4567</span></div>
-	<div class="txt2">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut</div>
-</div>	
+	<div class="txt1">¿Necesitas una solución tecnológica? <span>Llámanos: +57 314 579 3359</span></div>
+	<div class="txt2">Estamos listos para ayudarte con tu próximo proyecto de software</div>
+</div>
 </div>
 <div class="span4">
 <div class="block2">
@@ -456,31 +467,31 @@ $(window).load(function() {
 <div class="row">
 <div class="span4">
 	
-	<h2>Bienvenido a <span>Móvil</span></h2>
+	<h2 id="about">Bienvenido a <span>Only Systems</span></h2>
 
 	<p>
 		<strong>
-			Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mag
+			Somos una empresa colombiana especializada en consultoría y construcción de software personalizado.
 		</strong>
 	</p>
 	<p>
-		Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+		Con más de 10 años de experiencia, ofrecemos soluciones tecnológicas innovadoras que impulsan el crecimiento de nuestros clientes en la Región Caribe y más allá.
 	</p>
-	<a href="#" class="button2">leer más</a>
+	<a href="index-1.html" class="button2">Conoce nuestra historia</a>
 
 
 
 </div>
 <div class="span4">
 	
-	<h2>Por qué elegirnos</h2>
+	<h2 id="services">Por qué elegirnos</h2>
 
 	<ul class="ul1">
-	  <li><a href="#">Quisque nullatibulum libero</a></li>
-	  <li><a href="#">Scelerisque eget, malesuada at</a></li>
-	  <li><a href="#">Vivamus eget niiam cursus leo</a></li>
-	  <li><a href="#">Nulla facilisinean nec eros</a></li>
-	  <li><a href="#">Vestibulum ante ipsum</a></li>	  	            		      	      			      
+	  <li><a href="#">Experiencia comprobada en proyectos empresariales</a></li>
+	  <li><a href="#">Metodologías ágiles y mejores prácticas</a></li>
+	  <li><a href="#">Equipo multidisciplinario altamente calificado</a></li>
+	  <li><a href="#">Compromiso con la calidad y satisfacción del cliente</a></li>
+	  <li><a href="#">Soporte técnico continuo post-entrega</a></li>
 	</ul>
 
 
@@ -492,29 +503,29 @@ $(window).load(function() {
 <div class="caroufredsel_slider">
 	<div class="txt1">Testimonios</div>
 	<a class="prev_testimonial" href="#"></a>
-	<a class="next_testimonial" href="#"></a>	
+	<a class="next_testimonial" href="#"></a>
 	<ul id="caroufredsel" class="clearfix">
 		<li>
 			<div class="testimonial1">
-				<div class="txt1">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-				<div class="txt2">- Mike Smith, <span>Director General Empresa</span></div>
+				<div class="txt1">"Only Systems transformó completamente nuestro sistema de gestión. Su expertise en arquitectura de software nos permitió escalar eficientemente." </div>
+				<div class="txt2">- Carlos Rodríguez, <span>CEO Empresa Logística</span></div>
 			</div>
-			
+
 		</li>
 		<li>
 			<div class="testimonial1">
-				<div class="txt1">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-				<div class="txt2">- Olga Guz, <span>Director General Empresa</span></div>
+				<div class="txt1">"El equipo de Only Systems no solo desarrolló una aplicación móvil excepcional, sino que nos guió en toda la estrategia digital."</div>
+				<div class="txt2">- María González, <span>Directora de TI Retail</span></div>
 			</div>
-			
+
 		</li>
 		<li>
 			<div class="testimonial1">
-				<div class="txt1">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-				<div class="txt2">- Ann Parker, <span>Director General Empresa</span></div>
+				<div class="txt1">"Su consultoría en seguridad informática nos ayudó a proteger nuestros datos críticos. Servicio profesional y confiable."</div>
+				<div class="txt2">- Juan Pérez, <span>Gerente de Sistemas Financieros</span></div>
 			</div>
-			
-		</li>								
+
+		</li>
 	</ul>
 </div>
 </div>
@@ -601,8 +612,8 @@ $(window).load(function() {
 	<div class="block_title">empezando</div>
 
 	<div class="phone1">
-		<div class="txt1">Tienes preguntas? LLamanos:</div>
-		<div class="txt2">318 383 09 29</div>
+		<div class="txt1">¿Tienes preguntas? Llámanos:</div>
+		<div class="txt2">+57 314 579 3359</div>
 	</div>
 
 	<ul class="ul0">
@@ -614,9 +625,9 @@ $(window).load(function() {
 </div>	
 <footer>
 	<div class="copyright">
-		<a href="#">Politica de privacidad</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-		<a href="https://gridgum.com/themes/category/free/">Plantillas de sitios web gratis</a>
-		&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Copyright © 2022. Todos los derechos reservados
+		<a href="#">Política de privacidad</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+		<a href="#">Términos de servicio</a>
+		&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Copyright © 2024 Only Systems S.A.S. Todos los derechos reservados
 	</div>
 </footer>
 </div>	
